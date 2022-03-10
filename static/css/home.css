@@ -1,0 +1,483 @@
+@font-face
+{
+    font-family: ubntu;
+    src:url('/static/fonts/Ubuntu/Ubuntu-Regular.ttf');
+   
+}
+
+@font-face
+{
+    font-family: varela;
+    src:url('/static/fonts/Varela_Round/VarelaRound-Regular.ttf');
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('static/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+
+html,body
+{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    height:100%;
+    
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    /* max-height: 8vw; */
+    position: fixed;
+    width:100vw;
+    top: 0px;
+    background-color: white;
+   border-width: 0px;
+   z-index:1;
+}
+
+.dev {
+    font-family: 'ubntu';
+    font-weight: 1000;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.dev img {
+    width: 3.5vw;
+    /* height: 58px; */
+    padding: .16vw;
+    border-radius: 222px;
+    background-color: #0000ffa6;
+    padding-bottom: 0px;
+    margin: 1vw;
+    cursor:pointer;
+}
+
+
+.options {
+    display: flex;
+    align-items: center;
+    padding-top:.9vw;
+}
+
+.options a {
+    margin: 0px 3.5vw;
+    font-family: ubntu;
+    font-weight: 900;
+    color: #232121;
+    text-decoration: none;
+    font-size: 1.18vw;
+    transition:color 2ms ease-in;
+}
+
+.dev label{
+    font-size:1.4vw;
+    cursor:pointer;
+}
+
+.options a:hover,.dev label:hover {
+    color:#007cf5;
+}
+
+
+
+.window {
+    background-color:whitesmoke;
+    /* max-height: 85vh; */
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 0px;
+    
+}
+
+
+
+.social-media div img
+{
+    width:2.3vw;
+    cursor:pointer;
+}
+
+
+
+
+.social-media div {
+    width: fit-content;
+    padding: .6vw;
+    /* border: 2px solid black; */
+    /* border-top: 1px; */
+    /* border-color: black; */
+    /* border-width: 2px; */
+    /* border-style: solid; */
+    border: .16vw solid black;
+    border-top-width: .16vw;
+    border-bottom: 0px;
+    transition: border-color 2ms ease-in;
+
+}
+
+.social-media div:hover
+{
+    border-color: white;
+}
+
+#last-image {
+        border-bottom-width: .16vw;
+        border-color: black;
+        border-style: solid;
+    }
+
+#last-image:hover
+{   
+    border-color:white;
+    border-bottom-color:black;
+}
+
+
+    .profile,.form {
+        display: flex;
+        flex-direction: column;
+        padding: 13.6vw;
+    }
+     .about,.about-more,.name{
+        text-align: center;
+        font-size: 4vw;
+        font-family: monospace;
+        font-weight: 900;
+    }
+    .about {
+        font-size: 1.5vw;
+        font-weight: 500;
+        width: 56vw;
+    }
+    .projects {
+        text-align: center;
+    }
+    
+    .button {
+        border-radius: 1.2vw;
+        padding: 1.5vw 4.64vw;
+        font-family: monospace;
+        font-size: 2.24vw;
+        background-color: white;
+        font-weight: 1000;
+        cursor: pointer;
+        transition: color 2ms ease-in;
+    }
+
+    .button:hover
+    {
+     color:white;
+     background-color: black;
+    }
+    .profile div {
+        margin-bottom: 2.5vw;
+    }
+    .middle
+    { max-width:100%;
+        border-width: 0px;
+        background-color:darkgrey;
+    }
+
+    .about-more {
+        padding-top: 11.2vw;
+        /* text-decoration: underline; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+    
+       /* max-height: 42vh; */
+    }
+
+   .text {
+        font-size: 1.5vw;
+        font-weight: 500;
+        
+        padding: 0px 12.16vw;
+        height: 8vw;
+        font-family: monospace;
+        
+    }
+
+    .name{
+        letter-spacing: .1vw;
+        word-spacing: -.3vw;
+        
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom:.95vw;
+        height:7vw;
+
+    }
+
+    .underline {
+        width: 5vw;
+        height: 1.4vh;
+        background: linear-gradient(0deg, #007cf5, transparent);
+        border-radius: 1.36vw;
+    }
+    .know-me {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2.5vw;
+    }
+
+    .info {
+        width: 52vw;
+        /* max-height: 76vh; */
+        margin:3.12vw;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 8vw;
+        
+    }
+
+    
+
+    .description
+    {
+        padding:0px;
+        height:fit-content;
+        
+    }
+
+    .heading {
+        font-size: 2.2vw;
+        text-align: left;
+        font-weight: 898;
+        
+        
+    }
+
+    .name.heading {
+        margin-bottom: 1.6vw;
+    }
+
+    .text.description {
+        margin: .9vw 0px;
+        margin-bottom: 1.9vw;
+    }
+
+    .btn-small {
+        font-size: 1.6vw;
+        padding: .72vw 2.24vw;
+        border-radius: .48vw;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom:8vw;
+    }
+
+    .box {
+        font-size: 1.2vw;
+        font-weight: 300;
+        background: mintcream;
+        padding: 1.8vw;
+        border-radius: .72vw;
+        margin: .5vw;
+        position: relative;
+        top: 2vw;
+    }
+    
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        border-width: 0px;
+        justify-content: space-evenly;
+        /* max-height: 55vh; */
+        align-items: center;
+        z-index:-1;
+        /* background-color:rgb(250, 249, 248); */
+        background-color: rgb(235, 142, 108);
+    }
+    .bottom-social {
+        display: flex;
+    }
+    .bottom-social div
+    {
+        border-width: 0px;
+    }
+    .bottom-social #last-image
+    {
+        border-width: 0px;
+    }
+
+    .bottom-upper {
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        justify-content: space-around;
+        margin-bottom:6vh;
+    }
+
+    .name.heading.bottom-name {
+        font-size: 3vw;
+        text-align: center;
+        margin-top:5vh;
+    }
+    
+    .social-media.bottom-social img {
+        width: 5vw;
+        transition: opacity 2ms ease-in;
+    }
+
+    .social-media.bottom-social img:hover
+    {
+        opacity: .6;
+    }
+
+    .bottom-social {
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+    }
+
+    .bottom-lower {
+        width: 54vw;
+        height: 0.2vh;
+        background: linear-gradient(45deg, whitesmoke, whitesmoke);
+    }
+
+    .text.description.copyright {
+        font-size: .9vw;
+    }
+    
+.form
+{
+    
+    padding:19vw;
+}
+
+@media screen and (max-width:415px) and (min-width:5px)  {
+
+    .bottom
+    {
+        min-height:55vh;
+
+    }
+    .bottom-social {
+       
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-social div {
+        
+        margin: 1.4vh;
+        padding: .5vh;
+        border: 0.4vw whitesmoke solid;
+    }
+    .bottom-social #last-image {
+        border-width: 0px;
+        border: 0.4vw whitesmoke solid;
+    }
+
+    .form
+      {
+          padding:22vw 19vw;
+      }
+
+      label.text.description.msg {
+        /* position: relative; */
+        top: -2vw;
+    }
+   
+}
+
+.form div {
+    margin-bottom: 2vw;
+    /* width: 71vw; */
+}
+
+.input input {
+    width: 56vw;
+    height: 2.3vw;
+    border-radius: 0.5vw;
+    transition: background-color 2ms ease-in;
+    font-family: varela;
+    font-weight: bolder;
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+.input input:hover {
+    background-color: wheat;
+}
+
+.form .input .heading
+{
+    font-size: 1.8vw;
+    display: block;
+    margin-bottom: 0.5vw;
+}
+
+
+h2.name {
+    font-size: 3vw;
+    margin-top: 6vw;
+    margin-bottom:0px;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 1.5vw;
+    height: 2.6vw;
+}
+
+input[type="checkbox"]:hover {
+   background-color: rgba(0, 128, 0, 0.664);
+}
+
+label.text.description {
+    /* padding-bottom: 6vw; */
+    position: relative;
+    top: -1vw;
+    left: 1vw;
+}
+
+
+label.text.description.msg {
+    /* position: relative; */
+    top: 0vw;
+    font-size: .87vw;
+    color: mediumslateblue;
+}
+
+@media screen and (max-width:284px) {
+
+    .social-media div
+{
+    padding:.4vw;
+}    
+}
+
+@media screen and (max-aspect-ratio: 125/144)
+{
+    .form
+    {
+        padding:36vw 19vw;
+    }
+    label.text.description.msg {
+        /* position: relative; */
+        top: -.9vw;
+        
+    }
+
+}
+

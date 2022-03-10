@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="{% static 'images/letter-v.png' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Home</title>
+    
+</head>
+<body>
+     <div class="top">
+         <div class="dev">
+            <img src="{% static 'images/1.png' %}" alt="">
+            <label for="">VIKAS BHADU</label>
+         </div>
+         <div class="options">
+            <a href="http://localhost:8000/">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="">PROJECTS</a>
+            <a href="http://localhost:8000/contact/">CONTACT</a>
+         </div>
+     </div>
+    
+     <div class="window">
+         <div class="social-media">
+             <div><a href="https://www.linkedin.com/feed/" target="_blank"><img src="{% static 'images/linkedin-brands.svg' %}" alt=""></a></div>
+             <div><a href="https://github.com/Vikas-Bahdu" target="_blank"><img src="{% static 'images/github-brands.svg' %}" alt=""></a></div>
+             <div><a href=""><img src="{% static 'images/twitter-brands.svg' %}" alt=""></a></div>
+             <div><a href=""><img src="{% static 'images/youtube-brands.svg' %}" alt=""></a></div>
+             <div id="last-image"><a href=""><img src="{% static 'images/instagram-brands1.svg' %}" alt=""></a></div>
+         </div>
+         <div class="profile" >
+         <div class="name">HEY, MY NAME IS VIKAS BHADU</div>
+         <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente solutions for complex problems</div>
+         <div class="projects"><button class="button">PROJECTS</button></div>
+        </div>
+     </div>
+    
+   <div class="middle">
+     <div class="about-more" id="about">
+         <div class="title">
+            <div class="name">ABOUT ME </div>
+            <div class="underline"></div>
+         </div>
+         <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente</div>
+     </div>
+     <div class="know-me">
+         <div class="info">
+             <div class="name heading">Get to know me!</div>
+             <div class="text description">
+                Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
+               <br><br> I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Feel free to contact me here.
+             </div>
+            <div><button class="button btn-small">Contact</button></div> 
+         </div>
+         <div class="info">
+            <div class="name heading">My Skills</div>
+          <div class="skills">
+            <div class="name box">Django</div>
+            <div class="name box">Python</div>
+            <div class="name box">JavaScript</div>
+            <div class="name box">Java</div>
+            <div class="name box">C</div>
+            <div class="name box">C++</div>
+            <div class="name box">HTML</div>
+            <div class="name box">CSS</div>
+            <div class="name box">Pandas</div>
+            <div class="name box">Matplotlib</div>
+            <div class="name box">Numpy</div>
+            <div class="name box">Youtube API</div>
+            <div class="name box">DSA</div>
+            <div class="name box">STL</div>
+            <div class="name box">Git</div>
+          </div>
+            
+        </div>
+         
+     </div>
+     </div>
+
+    <div class="bottom">
+            <div class="bottom-upper">
+            
+              <div class="name heading bottom-name">Social</div>
+            <div class="social-media bottom-social">
+                <div><img src="{% static 'images/linkedin-brands.svg' %}" alt=""></div>
+                <div><img src="{% static 'images/github-brands.svg' %}" alt=""></div>
+                <div><img src="{% static 'images/twitter-brands.svg' %}" alt=""></div>
+                <div><img src="{% static 'images/youtube-brands.svg' %}" alt=""></div>
+                <div id="last-image"><img src="{% static 'images/instagram-brands1.svg' %}" alt=""></div>
+            </div>
+        </div>
+        
+        <div class="bottom-lower"></div>
+          <div class="text description copyright">© Copyright 2022. Made by Vikas Bhadu</div>
+    </div>
+    <style src="{% static 'js/home.js' %}"></style>
+</body>
+</html>
