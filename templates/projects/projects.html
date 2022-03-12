@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
+{% load static %}
+{% load app_tags %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,112 +11,133 @@
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <title>Projects</title>
 </head>
+
 <body>
     <div class="top">
         <div class="dev">
-           <img src="{% static 'images/1.png' %}" alt="">
-           <label for="">VIKAS BHADU</label>
+            <a href="http://localhost:8000/"><img src="{% static 'images/1.png' %}" alt=""></a>
+            <a href="http://localhost:8000/" style="text-decoration:none;color: #232121;"><label for="">VIKAS
+                    BHADU</label></a>
         </div>
         <div class="options">
-           <a href="http://localhost:8000/">HOME</a>
-           <a href="#about">ABOUT</a>
-           <a href="http://localhost:8000/projects/">PROJECTS</a>
-           <a href="http://localhost:8000/contact/">CONTACT</a>
+            <a href="http://localhost:8000/">HOME</a>
+            <a href="http://localhost:8000/#about">ABOUT</a>
+            <a href="http://localhost:8000/projects/">PROJECTS</a>
+            <a href="http://localhost:8000/contact/">CONTACT</a>
         </div>
     </div>
     <div class="middle projects-main">
         <div class="about-more" id="about">
             <div class="title">
-               <div class="name">PROJECTS</div>
-               <div class="underline"></div>
+
+                <div class="name">PROJECTS</div>
+                <div class="underline"></div>
             </div>
-            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente</div>
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo
+                quae quod deserunt eius sapiente</div>
         </div>
-            
-         <div class="laptop-block">
+
+        <div class="laptop-block">
+            {% with x=0 %}
             <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
                 <div class="info">
-                    <div class="name heading">Get to know me!</div>
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
                     <div class="text description">
-                      <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.</p> 
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for agencies, consulted for startups, and collaborated with talented people to
+                            create digital products for both business and consumer use.</p>
                     </div>
-                   <div><button class="button btn-small">CASE STUDY</button></div> 
-                </div></div>
-                <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
-                    <div class="info">
-                        <div class="name heading">Get to know me!</div>
-                        <div class="text description">
-                            <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects for
-                                agencies, consulted for startups, and collaborated with talented people to create digital products for
-                                both business and consumer use.</p>
-                        </div>
-                        <div><button class="button btn-small">CASE STUDY</button></div>
-                    </div>
+                    <div><a href="http://localhost:8000/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
                 </div>
-                <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
-                    <div class="info">
-                        <div class="name heading">Get to know me!</div>
-                        <div class="text description">
-                            <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects for
-                                agencies, consulted for startups, and collaborated with talented people to create digital products for
-                                both business and consumer use.</p>
-                        </div>
-                        <div><button class="button btn-small">CASE STUDY</button></div>
+            </div>
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for
+                            agencies, consulted for startups, and collaborated with talented people to create digital
+                            products for
+                            both business and consumer use.</p>
                     </div>
+                    <div><a href="http://localhost:8000/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
                 </div>
-                <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
-                    <div class="info">
-                        <div class="name heading">Get to know me!</div>
-                        <div class="text description">
-                            <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects for
-                                agencies, consulted for startups, and collaborated with talented people to create digital products for
-                                both business and consumer use.</p>
-                        </div>
-                        <div><button class="button btn-small">CASE STUDY</button></div>
+            </div>
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for
+                            agencies, consulted for startups, and collaborated with talented people to create digital
+                            products for
+                            both business and consumer use.</p>
                     </div>
+                    <div><a href="http://localhost:8000/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
                 </div>
-                <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
-                    <div class="info">
-                        <div class="name heading">Get to know me!</div>
-                        <div class="text description">
-                            <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects for
-                                agencies, consulted for startups, and collaborated with talented people to create digital products for
-                                both business and consumer use.</p>
-                        </div>
-                        <div><button class="button btn-small">CASE STUDY</button></div>
+            </div>
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for
+                            agencies, consulted for startups, and collaborated with talented people to create digital
+                            products for
+                            both business and consumer use.</p>
                     </div>
+                    <div><a href="http://localhost:8000/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
                 </div>
-                <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
-                    <div class="info">
-                        <div class="name heading">Get to know me!</div>
-                        <div class="text description">
-                            <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects for
-                                agencies, consulted for startups, and collaborated with talented people to create digital products for
-                                both business and consumer use.</p>
-                        </div>
-                        <div><button class="button btn-small">CASE STUDY</button></div>
+            </div>
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for
+                            agencies, consulted for startups, and collaborated with talented people to create digital
+                            products for
+                            both business and consumer use.</p>
                     </div>
+                    <div><a href="http://localhost:8000/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
                 </div>
-         </div>
-        </div>
-    
-    
-    <div class="bottom">
-        <div class="bottom-upper">
-        
-          <div class="name heading bottom-name">Social</div>
-        <div class="social-media bottom-social">
-            <div><img src="{% static 'images/linkedin-brands.svg' %}" alt=""></div>
-            <div><img src="{% static 'images/github-brands.svg' %}" alt=""></div>
-            <div><img src="{% static 'images/twitter-brands.svg' %}" alt=""></div>
-            <div><img src="{% static 'images/youtube-brands.svg' %}" alt=""></div>
-            <div id="last-image"><img src="{% static 'images/instagram-brands1.svg' %}" alt=""></div>
+            </div>
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for
+                            agencies, consulted for startups, and collaborated with talented people to create digital
+                            products for
+                            both business and consumer use.</p>
+                    </div>
+                    <div><a href="http://localhost:8000/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
+                </div>
+            </div>
+            {% endwith %}
         </div>
     </div>
-    
-    <div class="bottom-lower"></div>
-      <div class="text description copyright">© Copyright 2022. Made by Vikas Bhadu</div>
-</div>
-    
+
+
+    <div class="bottom">
+        <div class="bottom-upper">
+
+            <div class="name heading bottom-name">Social</div>
+            <div class="social-media bottom-social">
+                <div><img src="{% static 'images/linkedin-brands.svg' %}" alt=""></div>
+                <div><img src="{% static 'images/github-brands.svg' %}" alt=""></div>
+                <div><img src="{% static 'images/twitter-brands.svg' %}" alt=""></div>
+                <div><img src="{% static 'images/youtube-brands.svg' %}" alt=""></div>
+                <div id="last-image"><img src="{% static 'images/instagram-brands1.svg' %}" alt=""></div>
+            </div>
+        </div>
+
+        <div class="bottom-lower"></div>
+        <div class="text description copyright">© Copyright 2022. Made by Vikas Bhadu</div>
+    </div>
+
 </body>
+
 </html>

@@ -156,6 +156,7 @@ html,body
         font-size: 1.5vw;
         font-weight: 500;
         width: 56vw;
+        line-height:3vw;
     }
     .projects {
         text-align: center;
@@ -169,16 +170,19 @@ html,body
         background-color: white;
         font-weight: 1000;
         cursor: pointer;
-        transition: color 2ms ease-in;
+        transition: color 2ms ease-in,transform .3s ease-in-out;
     }
 
     .button:hover
     {
      color:white;
      background-color: black;
+     transform: translateY(-3px);
     }
+
     .profile div {
-        margin-bottom: 2.5vw;
+        margin: 2.3vw 0vw;
+        margin:1vw;
     }
     .middle
     { max-width:100%;
@@ -203,6 +207,7 @@ html,body
         padding: 0px 12.16vw;
         height: 8vw;
         font-family: monospace;
+        line-height: 3vw;
         
     }
 
@@ -224,7 +229,7 @@ html,body
 
     .underline {
         width: 5vw;
-        height: 1.4vh;
+        height: .5vw;
         background: linear-gradient(0deg, #007cf5, transparent);
         border-radius: 1.36vw;
     }
@@ -270,6 +275,7 @@ html,body
     .text.description {
         margin: .9vw 0px;
         margin-bottom: 1.9vw;
+        line-height:3vw;
     }
 
     .btn-small {
@@ -365,39 +371,14 @@ html,body
     padding:19vw;
 }
 
-@media screen and (max-width:415px) and (min-width:5px)  {
 
-    .bottom
-    {
-        min-height:55vh;
 
-    }
-    .bottom-social {
-       
-        flex-direction: column;
-        align-items: center;
-    }
-    .bottom-social div {
-        
-        margin: 1.4vh;
-        padding: .5vh;
-        border: 0.4vw whitesmoke solid;
-    }
-    .bottom-social #last-image {
-        border-width: 0px;
-        border: 0.4vw whitesmoke solid;
-    }
 
-    .form
-      {
-          padding:22vw 19vw;
-      }
 
-      label.text.description.msg {
-        /* position: relative; */
-        top: -2vw;
-    }
-   
+.project-window
+{
+    flex-direction: column;
+    justify-content: initial;
 }
 
 .form div {
@@ -477,7 +458,7 @@ label.text.description.msg {
 
 .projectno {
     display: flex;
-    margin-bottom:5vw;
+    margin-top:5vw;
 }
 
 .projects-main .info {
@@ -487,7 +468,7 @@ label.text.description.msg {
     
     /* justify-content: space-evenly; */
     /* margin-bottom: 8vw; */
-    padding: 6vw 0vw;
+    padding: 2.05vw 0vw;
     justify-content: initial;
 }
 
@@ -499,6 +480,38 @@ label.text.description.msg {
 .projects-main .text.description {
     margin-top: 0.5vw;
     margin-bottom: 0.9vw;
+}
+
+.project-middle
+{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+.project-middle .info
+{
+    margin:0vw;
+    padding:0vw;
+    margin-bottom: 4vw;
+
+}
+
+.project-middle .box
+{
+    background-color: orange;
+}
+
+.project-live-button button {
+    margin: 2vw 0vw;
+    margin-right: 2vw;
+}
+
+.project-middle .skills
+{
+    padding-bottom:0vw;
+    margin-bottom: 2.9vw;
 }
 
 @media screen and (max-width:284px) {
@@ -523,3 +536,37 @@ label.text.description.msg {
 
 }
 
+@media screen and (max-width:415px) and (min-width:5px)  {
+
+    .bottom
+    {
+        min-height:55vh;
+
+    }
+    .bottom-social {
+       
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-social div {
+        
+        margin: 1.4vh;
+        padding: .5vh;
+        border: 0.4vw whitesmoke solid;
+    }
+    .bottom-social #last-image {
+        border-width: 0px;
+        border: 0.4vw whitesmoke solid;
+    }
+
+    .form
+      {
+          padding:22vw 19vw;
+      }
+
+      label.text.description.msg {
+        /* position: relative; */
+        top: -2vw;
+    }
+   
+}
