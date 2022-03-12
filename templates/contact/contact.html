@@ -32,15 +32,15 @@
         </div>
         <div class="form" >
             <h2 class="name">Contact me for work/general Enquiries</h2>
-          <form action="" method="post" enctype="multipart/form-data" >
+          <form action="http://localhost:8000/contact/save-request/" method="post" enctype="multipart/form-data" >
               {% csrf_token %}
               
-              <div class="input"><label for="" class="name heading ">Email</label><input type="text"  name="email"  pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>
+              <div class="input"><label for="" class="name heading ">Email</label><input type="text"  name="email" maxlength="50" pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" autocomplete="off" required>
                 <label for="" class="text description msg">*we'll never share your email and phone no. with anyone else</label>
             </div>
-              <div class="input"><label for="" class="name heading ">Phone</label><input type="tel" name="phoneno" class='child' pattern="\d{10}" required></div>
-              <div class="input"><label class="name heading ">Enquiry</label><input type="text" name="query" class='child' required></div>
-              <div><input type="checkbox"><label for="" class="text description">I want you to work on a project with me</label></div>
+              <div class="input"><label for="" class="name heading ">Phone</label><input type="tel" name="phone" class='child' pattern="\d{10}" required autocomplete="off"></div>
+              <div class="input"><label class="name heading ">Enquiry</label><input type="text" name="enquiry"  minlength=10 maxlength=100  class='child'  required autocomplete="off" ></div>
+              <div><input type="checkbox" value="true" name="collabration"><label for="" class="text description">I want you to work on a project with me</label></div>
               <div><button class="button btn-small" id="submit">Submit</button></div> 
           </form>
        </div>

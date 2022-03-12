@@ -459,6 +459,48 @@ label.text.description.msg {
     color: mediumslateblue;
 }
 
+.middle.projects-main {
+    background-color: white;
+}
+
+.laptop-block {
+    margin: 4vw 0vw;
+    /* display: flex; */
+}
+
+.laptop {
+    width: 56vw;
+    display: inline-block;
+    margin-bottom: 6vw;
+}
+
+
+.projectno {
+    display: flex;
+    margin-bottom:5vw;
+}
+
+.projects-main .info {
+    
+    /* max-height: 76vh; */
+    margin: 0vw 3.12vw;
+    
+    /* justify-content: space-evenly; */
+    /* margin-bottom: 8vw; */
+    padding: 6vw 0vw;
+    justify-content: initial;
+}
+
+.projects-main .name.heading {
+    /* margin-bottom: 1.6vw; */
+    margin: 0vw 0vw;
+}
+
+.projects-main .text.description {
+    margin-top: 0.5vw;
+    margin-bottom: 0.9vw;
+}
+
 @media screen and (max-width:284px) {
 
     .social-media div
