@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,44 +10,50 @@
     <link rel="stylesheet" href="{% static 'css/home.css/' %}">
     <title>Project</title>
 </head>
+
 <body>
     <div class="top">
         <div class="dev">
-           <a href="http://localhost:8000/"><img src="{% static 'images/1.png' %}" alt=""></a>
-           <a href="http://localhost:8000/" style="text-decoration:none;color: #232121;"><label for="">VIKAS BHADU</label></a>
+            <a href="http://localhost:8000/"><img src="{% static 'images/1.png' %}" alt=""></a>
+            <a href="http://localhost:8000/" style="text-decoration:none;color: #232121;"><label for="">VIKAS
+                    BHADU</label></a>
         </div>
         <div class="options">
-           <a href="http://localhost:8000/">HOME</a>
-           <a href="#about">ABOUT</a>
-           <a href="http://localhost:8000/projects/">PROJECTS</a>
-           <a href="http://localhost:8000/contact/">CONTACT</a>
+            <a href="http://localhost:8000/">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="http://localhost:8000/projects/">PROJECTS</a>
+            <a href="http://localhost:8000/contact/">CONTACT</a>
         </div>
     </div>
 
     <div class="window project-window">
-       
-        <div class="profile" >
-        <div class="name">PROJECT NAME</div>
-        <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente solutions for complex problems</div>
-        <div class="projects"><a href="http://localhost:8000/projects/"><button class="button">LIVE LINK</button></a></div>
-       </div>
+
+        <div class="profile">
+            <div class="name">PROJECT NAME</div>
+            <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo
+                quae quod deserunt eius sapiente solutions for complex problems</div>
+            <div class="projects"><a href="http://localhost:8000/projects/"><button class="button">LIVE
+                        LINK</button></a></div>
+        </div>
     </div>
 
     <div class="middle projects-main project-middle">
         <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt=""></div>
-            <div class="info">
-                <div class="name heading">Project Overview </div>
-                <div class="text description">
-                    <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects for
-                        agencies, consulted for startups, and collaborated with talented people to create digital products for
-                        both business and consumer use.</p>
-                </div>
-            
-                
+        <div class="info">
+            <div class="name heading">Project Overview </div>
+            <div class="text description">
+                <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects
+                    for
+                    agencies, consulted for startups, and collaborated with talented people to create digital products
+                    for
+                    both business and consumer use.</p>
             </div>
-            <div class="info">
-                <div class="name heading">Tools Used</div>
-              <div class="skills">
+
+
+        </div>
+        <div class="info">
+            <div class="name heading">Tools Used</div>
+            <div class="skills">
                 <div class="name box">Django</div>
                 <div class="name box">Python</div>
                 <div class="name box">JavaScript</div>
@@ -62,36 +69,57 @@
                 <div class="name box">DSA</div>
                 <div class="name box">STL</div>
                 <div class="name box">Git</div>
-              </div>
-                
             </div>
+
+        </div>
         <div class="info see-live">
             <div class="name heading">See Live </div>
             <div class="project-live-button">
                 <button class="button btn-small">LIVE LINK</button>
-               <a href="http://localhost:8000/projects/"><button class="button btn-small">GO BACK</button></a> 
+                <a href="http://localhost:8000/projects/"><button class="button btn-small go-back">GO BACK</button></a>
             </div>
         </div>
-        </div>
+    </div>
 
-        </div>
+    </div>
 
-        <div class="bottom">
-            <div class="bottom-upper">
-        
-                <div class="name heading bottom-name">Social</div>
-                <div class="social-media bottom-social">
-                    <div><img src="{% static 'images/linkedin-brands.svg' %}" alt=""></div>
-                    <div><img src="{% static 'images/github-brands.svg' %}" alt=""></div>
-                    <div><img src="{% static 'images/twitter-brands.svg' %}" alt=""></div>
-                    <div><img src="{% static 'images/youtube-brands.svg' %}" alt=""></div>
-                    <div id="last-image"><img src="{% static 'images/instagram-brands1.svg' %}" alt=""></div>
-                </div>
+    <div class="bottom">
+        <div class="bottom-upper">
+
+            <div class="name heading bottom-name">Social</div>
+            <div class="social-media bottom-social">
+                <div><img src="{% static 'images/linkedin (1).png' %}" alt=""></div>
+                <div><img src="{% static 'images/github.png' %}" alt=""></div>
+                <div><img src="{% static 'images/twitter.png' %}" alt=""></div>
+                <div><img src="{% static 'images/youtube (1).png' %}" alt=""></div>
+                <div><img src="{% static 'images/instagram.png' %}" alt=""></div>
             </div>
-        
-            <div class="bottom-lower"></div>
-            <div class="text description copyright">© Copyright 2022. Made by Vikas Bhadu</div>
         </div>
-    
+
+        <div class="bottom-lower"></div>
+        <div class="text description copyright">© Copyright 2022. Made by <a href="http://localhost:8000/"
+                style="color:whitesmoke">Vikas Bhadu</a> </div>
+    </div>
+
+
+    <script>
+        console.log("hello! world");
+        let Parent_devLabel = document.getElementsByClassName('dev');
+        let devImage = Parent_devLabel[0].querySelectorAll('a')[0].querySelector('img');
+        let devLabel = Parent_devLabel[0].querySelectorAll('a')[1];
+
+
+        devImage.addEventListener('mouseover', () => {
+            devLabel.style.color = '#facf0f';
+
+        })
+
+        devImage.addEventListener('mouseout', () => {
+            devLabel.style.color = '#232121';
+
+        })
+
+    </script>
 </body>
+
 </html>

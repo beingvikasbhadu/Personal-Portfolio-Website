@@ -6,7 +6,7 @@ let submit=document.getElementById('submit')
 let input=document.getElementsByClassName('input')
 let email=input[0].querySelector('input')
 let phone=input[1].querySelector('input')
-let enquiry=input[2].querySelector('input')
+let enquiry=input[2].querySelector('textarea')
 
 submit.addEventListener('click',()=>
 {console.log('submit clicked!')
@@ -28,6 +28,25 @@ submit.addEventListener('click',()=>
       else
       enquiry.setCustomValidity("")
 
+})
+
+
+
+let Parent_devLabel=document.getElementsByClassName('dev');
+let devImage=Parent_devLabel[0].querySelectorAll('a')[0].querySelector('img');
+let devLabel=Parent_devLabel[0].querySelectorAll('a')[1];
+
+
+devImage.addEventListener('mouseover',()=>
+{
+   devLabel.style.color='#facf0f';
+
+})
+
+devImage.addEventListener('mouseout',()=>
+{
+   devLabel.style.color='#232121';
+   
 })
 
 

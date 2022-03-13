@@ -16,6 +16,10 @@
     src: url('static/fonts/Roboto/Roboto-Bold.ttf');
 }
 
+@font-face {
+    font-family: neue;
+    src: url('static/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
 
 html,body
 {
@@ -52,11 +56,12 @@ html,body
     /* height: 58px; */
     padding: .16vw;
     border-radius: 222px;
-    background-color: #0000ffa6;
+    background-color: #facf0f;
     padding-bottom: 0px;
     margin: 1vw;
     cursor:pointer;
 }
+
 
 
 .options {
@@ -72,24 +77,25 @@ html,body
     color: #232121;
     text-decoration: none;
     font-size: 1.18vw;
-    transition:color 2ms ease-in;
+    transition:color .3s ease;
 }
 
 .dev label{
     font-size:1.4vw;
     cursor:pointer;
+    transition:color .3s ease;
 }
+
+
 
 .options a:hover,.dev label:hover {
-    color:#007cf5;
+    color:#facf0f;
 }
 
-
-
 .window {
-    background-color:whitesmoke;
+    background:linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url('/static/images/common-bg.svg');
     /* max-height: 85vh; */
-   width: 100%;
+   width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,48 +103,57 @@ html,body
     
 }
 
-
-
-.social-media div img
+.social-media
 {
-    width:2.3vw;
-    cursor:pointer;
+    background-color: white;
+}
+
+.social-media div img {
+    width: 2.8vw;
+    cursor: pointer;
+    
+}
+
+.window .social-media div a {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    /* align-items: center; */
+    padding: 0.8vw 0.7vw;
+    border-radius: 0.5vw;
+    transition: background-color .3s ease;
+}
+
+.window .social-media div a:hover
+{
+background: rgba(250,207,15,.2);;
 }
 
 
 
 
+
+
 .social-media div {
-    width: fit-content;
+    display: flex;
+    justify-content: center;
     padding: .6vw;
     /* border: 2px solid black; */
     /* border-top: 1px; */
     /* border-color: black; */
     /* border-width: 2px; */
     /* border-style: solid; */
-    border: .16vw solid black;
-    border-top-width: .16vw;
-    border-bottom: 0px;
-    transition: border-color 2ms ease-in;
+   
+   
+  
+   
 
 }
 
-.social-media div:hover
-{
-    border-color: white;
-}
 
-#last-image {
-        border-bottom-width: .16vw;
-        border-color: black;
-        border-style: solid;
-    }
 
-#last-image:hover
-{   
-    border-color:white;
-    border-bottom-color:black;
-}
+
 
 
     .profile,.form {
@@ -148,15 +163,16 @@ html,body
     }
      .about,.about-more,.name{
         text-align: center;
-        font-size: 4vw;
+        font-size: 4.2vw;
         font-family: monospace;
-        font-weight: 900;
+        font-weight: bolder;
+
     }
     .about {
         font-size: 1.5vw;
         font-weight: 500;
         width: 56vw;
-        line-height:3vw;
+        line-height:2.6vw;
     }
     .projects {
         text-align: center;
@@ -167,7 +183,7 @@ html,body
         padding: 1.5vw 4.64vw;
         font-family: monospace;
         font-size: 2.24vw;
-        background-color: white;
+        background-color:#facf0f;
         font-weight: 1000;
         cursor: pointer;
         transition: color 2ms ease-in,transform .3s ease-in-out;
@@ -175,19 +191,20 @@ html,body
 
     .button:hover
     {
-     color:white;
+     color:#facf0f;
      background-color: black;
      transform: translateY(-3px);
     }
+
 
     .profile div {
         margin: 2.3vw 0vw;
         margin:1vw;
     }
     .middle
-    { max-width:100%;
+    { max-width:100vw;
         border-width: 0px;
-        background-color:darkgrey;
+        background-color:#fafafa;
     }
 
     .about-more {
@@ -207,7 +224,7 @@ html,body
         padding: 0px 12.16vw;
         height: 8vw;
         font-family: monospace;
-        line-height: 3vw;
+        line-height: 2.6vw;
         
     }
 
@@ -230,7 +247,7 @@ html,body
     .underline {
         width: 5vw;
         height: .5vw;
-        background: linear-gradient(0deg, #007cf5, transparent);
+        background: linear-gradient(0deg, #facf0f, transparent);
         border-radius: 1.36vw;
     }
     .know-me {
@@ -275,13 +292,23 @@ html,body
     .text.description {
         margin: .9vw 0px;
         margin-bottom: 1.9vw;
-        line-height:3vw;
+        line-height:2.5vw;
     }
 
     .btn-small {
         font-size: 1.6vw;
         padding: .72vw 2.24vw;
         border-radius: .48vw;
+    }
+    .all-skills
+    {
+       
+        justify-content: initial;
+        
+    }
+    
+    .all-skills .name.heading {
+        margin-bottom: 0vw;
     }
 
     .skills {
@@ -292,8 +319,9 @@ html,body
 
     .box {
         font-size: 1.2vw;
-        font-weight: 300;
-        background: mintcream;
+        font-family: varela;
+        font-weight: bolder;
+        background: rgba(153,153,153,.2);
         padding: 1.8vw;
         border-radius: .72vw;
         margin: .5vw;
@@ -304,27 +332,20 @@ html,body
     .bottom {
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        width: 100vw;
         border-width: 0px;
         justify-content: space-evenly;
         /* max-height: 55vh; */
         align-items: center;
         z-index:-1;
         /* background-color:rgb(250, 249, 248); */
-        background-color: rgb(235, 142, 108);
+        background-color: #000;
+        color:whitesmoke;
     }
     .bottom-social {
         display: flex;
     }
-    .bottom-social div
-    {
-        border-width: 0px;
-    }
-    .bottom-social #last-image
-    {
-        border-width: 0px;
-    }
-
+    
     .bottom-upper {
         display: flex;
         flex-direction: column;
@@ -340,8 +361,8 @@ html,body
     }
     
     .social-media.bottom-social img {
-        width: 5vw;
-        transition: opacity 2ms ease-in;
+        width: 4vw;
+        transition: opacity .3s ease;
     }
 
     .social-media.bottom-social img:hover
@@ -353,6 +374,7 @@ html,body
         display: flex;
         width: 100vw;
         justify-content: space-around;
+        background: black;
     }
 
     .bottom-lower {
@@ -365,55 +387,84 @@ html,body
         font-size: .9vw;
     }
     
-.form
-{
-    
-    padding:19vw;
+    .contact-window
+    {
+        justify-content: center;
+    }
+
+    .form {
+        /* padding: 3vw; */
+        margin: 16vw 0vw;
+        /* margin-right: 12vw; */
+        background: white;
+        padding: 3vw;
+        border-radius: 1vw;
+        position: relative;
+        left: 4vw;
+        box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+        align-items: center;
+    }
+
+
+
+.contact-window .social-media {
+    position: absolute;
+    left: 0px;
 }
-
-
-
-
-
 .project-window
 {
     flex-direction: column;
     justify-content: initial;
 }
 
-.form div {
-    margin-bottom: 2vw;
-    /* width: 71vw; */
-}
 
-.input input {
+
+.input input,textarea {
+    border: 1px solid #ebebeb;
+    display: block;
     width: 56vw;
     height: 2.3vw;
-    border-radius: 0.5vw;
-    transition: background-color 2ms ease-in;
+    border-radius: 0.6vw;
+    background: #f0f0f0;
+    /* transition: background-color 2ms ease-in; */
     font-family: varela;
-    font-weight: bolder;
+    font-weight: 500;
     font-size: 1.4vw;
-    text-align: center;
+    
+    padding: 1.1vw;
 }
 
-.input input:hover {
-    background-color: wheat;
+textarea.child.message {
+    resize: none;
+    /* display: initial; */
+    height: initial;
 }
 
-.form .input .heading
-{
+button#submit {
+    margin-top: 3vw;
+}
+
+.form .input .heading {
     font-size: 1.8vw;
     display: block;
-    margin-bottom: 0.5vw;
+    color: #666;
+    font-weight: 800;
+    margin-bottom: 1.5vw;
 }
 
 
 h2.name {
     font-size: 3vw;
-    margin-top: 6vw;
-    margin-bottom:0px;
+    /* margin-top: 6vw; */
+    margin-top: 0vw;
+    margin-bottom:1vw;
+    
 }
+
+.underline.h2 {
+    margin-bottom:5vw;
+}
+
 
 input[type="checkbox"] {
     display: inline-block;
@@ -425,19 +476,29 @@ input[type="checkbox"]:hover {
    background-color: rgba(0, 128, 0, 0.664);
 }
 
+
+.input {
+    margin-bottom: 5vw;
+}
+
+
 label.text.description {
     /* padding-bottom: 6vw; */
     position: relative;
     top: -1vw;
     left: 1vw;
 }
+.input input,textarea:focus
+{
+    outline:0px;
+}
 
 
 label.text.description.msg {
-    /* position: relative; */
-    top: 0vw;
+    position: static;
+    /* top: 0vw; */
     font-size: .87vw;
-    color: mediumslateblue;
+    color: #b39393;
 }
 
 .middle.projects-main {
@@ -459,6 +520,7 @@ label.text.description.msg {
 .projectno {
     display: flex;
     margin-top:5vw;
+
 }
 
 .projects-main .info {
@@ -500,14 +562,28 @@ label.text.description.msg {
 
 .project-middle .box
 {
-    background-color: orange;
+    background-color: rgba(153,153,153,.2);
 }
 
 .project-live-button button {
     margin: 2vw 0vw;
     margin-right: 2vw;
+
 }
 
+.see-live .go-back
+{
+    border:.2vw solid #facf0f;
+    background-color: white;
+    letter-spacing: 0.15vw;
+    transition:border-color .2s ease, color .2s ease;
+}
+
+.see-live .go-back:hover
+{
+border-color:black;
+
+}
 .project-middle .skills
 {
     padding-bottom:0vw;
@@ -519,20 +595,38 @@ label.text.description.msg {
     .social-media div
 {
     padding:.4vw;
-}    
+}   
+.window
+{
+    padding-top:10vw;
+} 
 }
 
 @media screen and (max-aspect-ratio: 125/144)
 {
     .form
     {
-        padding:36vw 19vw;
+        padding:16vw 4vw;
     }
     label.text.description.msg {
         /* position: relative; */
         top: -.9vw;
         
     }
+    .bottom-social {
+       
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .social-media div {
+        margin: 4vw;
+    }
+    .window
+{
+    padding-top:10vw;
+    padding-bottom: 4vw;
+} 
 
 }
 
@@ -552,21 +646,24 @@ label.text.description.msg {
         
         margin: 1.4vh;
         padding: .5vh;
-        border: 0.4vw whitesmoke solid;
+        margin-bottom: 4vw;
+        
     }
-    .bottom-social #last-image {
-        border-width: 0px;
-        border: 0.4vw whitesmoke solid;
-    }
+    
 
     .form
       {
-          padding:22vw 19vw;
+          padding:9vw 5vw;
       }
 
       label.text.description.msg {
         /* position: relative; */
         top: -2vw;
     }
+    .window
+{
+    padding-top:16vw;
+    padding-bottom: 5vw;
+} 
    
 }
