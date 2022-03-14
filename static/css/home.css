@@ -51,6 +51,12 @@ html,body
     align-items: center;
 }
 
+.top .dev a {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+
 .dev img {
     width: 3.5vw;
     /* height: 58px; */
