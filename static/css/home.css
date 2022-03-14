@@ -544,6 +544,11 @@ label.text.description.msg {
     margin-bottom: 0.9vw;
 }
 
+.projects-main .about-more {
+    /* background: red; */
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/static/images/common-bg.svg);
+}
+
 .project-middle
 {
     display:flex;
