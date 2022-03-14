@@ -17,4 +17,4 @@ def saveRequest(request):
     if collabration:
         p.collabration='false'
     p.save()
-    return HttpResponseRedirect('http://localhost:8000/')
+    return HttpResponseRedirect('https://vikasbhadu.herokuapp.com/')
