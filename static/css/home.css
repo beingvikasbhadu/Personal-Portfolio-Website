@@ -208,7 +208,7 @@ background: rgba(250,207,15,.2);;
         margin:1vw;
     }
     .middle
-    { max-width:100vw;
+    { width:100vw;
         border-width: 0px;
         background-color:#fafafa;
     }
