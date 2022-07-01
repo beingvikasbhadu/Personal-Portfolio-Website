@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% load app_tags %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="{% static 'images/letter-v.png' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Projects</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="dev">
+            <a href="https://vikasbhadu.herokuapp.com/"><img src="{% static 'images/1.png' %}" alt=""></a>
+            <a href="https://vikasbhadu.herokuapp.com/" style="text-decoration:none;color: #232121;"><label for="">VIKAS
+                    BHADU</label></a>
+        </div>
+        <div class="options">
+            <a href="https://vikasbhadu.herokuapp.com/">HOME</a>
+            <a href="https://vikasbhadu.herokuapp.com/#about">ABOUT</a>
+            <a href="https://vikasbhadu.herokuapp.com/projects/">PROJECTS</a>
+            <a href="https://vikasbhadu.herokuapp.com/contact/">CONTACT</a>
+        </div>
+    </div>
+    <div class="middle projects-main">
+        <div class="about-more" id="about">
+            <div class="title">
+
+                <div class="name">PROJECTS</div>
+                <div class="underline"></div>
+            </div>
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo
+                quae quod deserunt eius sapiente</div>
+        </div>
+
+        <div class="laptop-block">
+            {% with x=0 %}
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for agencies, consulted for startups, and collaborated with talented people to
+                            create digital products for both business and consumer use.</p>
+                    </div>
+                    <div><a href="https://vikasbhadu.herokuapp.com/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
+                </div>
+            </div>
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for
+                            agencies, consulted for startups, and collaborated with talented people to create digital
+                            products for
+                            both business and consumer use.</p>
+                    </div>
+                    <div><a href="https://vikasbhadu.herokuapp.com/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
+                </div>
+            </div>
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for
+                            agencies, consulted for startups, and collaborated with talented people to create digital
+                            products for
+                            both business and consumer use.</p>
+                    </div>
+                    <div><a href="https://vikasbhadu.herokuapp.com/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
+                </div>
+            </div>
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for
+                            agencies, consulted for startups, and collaborated with talented people to create digital
+                            products for
+                            both business and consumer use.</p>
+                    </div>
+                    <div><a href="https://vikasbhadu.herokuapp.com/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
+                </div>
+            </div>
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for
+                            agencies, consulted for startups, and collaborated with talented people to create digital
+                            products for
+                            both business and consumer use.</p>
+                    </div>
+                    <div><a href="https://vikasbhadu.herokuapp.com/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
+                </div>
+            </div>
+            <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt="">
+                <div class="info">
+                    <div class="name heading">Project {% add x 1 as x %}{{x}}</div>
+                    <div class="text description">
+                        <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote
+                            projects for
+                            agencies, consulted for startups, and collaborated with talented people to create digital
+                            products for
+                            both business and consumer use.</p>
+                    </div>
+                    <div><a href="https://vikasbhadu.herokuapp.com/projects/no={{x}}/" target="_blank"><button class="button btn-small">CASE STUDY</button></a></div>
+                </div>
+            </div>
+            {% endwith %}
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <div class="bottom-upper">
+
+            <div class="name heading bottom-name">Social</div>
+            <div class="social-media bottom-social">
+                <div><a target="_blank" href="https://www.linkedin.com/feed/"><img src="{% static 'images/linkedin (1).png' %}" alt=""></a></div>
+                <div><a target="_blank" href="https://github.com/Vikas-Bahdu"><img src="{% static 'images/github.png' %}" alt=""></a></div>
+                <div><img src="{% static 'images/twitter.png' %}" alt=""></div>
+                <div><img src="{% static 'images/youtube (1).png' %}" alt=""></div>
+                <div ><img src="{% static 'images/instagram.png' %}" alt=""></div>
+            </div>
+        </div>
+
+        <div class="bottom-lower"></div>
+        <div class="text description copyright">© Copyright 2022. Made by <a href="https://vikasbhadu.herokuapp.com/" style="color:whitesmoke">Vikas Bhadu</a> </div>
+  </div>
+  
+  <script>
+    console.log("hello! world");
+    let Parent_devLabel = document.getElementsByClassName('dev');
+    let devImage = Parent_devLabel[0].querySelectorAll('a')[0].querySelector('img');
+    let devLabel = Parent_devLabel[0].querySelectorAll('a')[1];
+
+
+    devImage.addEventListener('mouseover', () => {
+        devLabel.style.color = '#facf0f';
+
+    })
+
+    devImage.addEventListener('mouseout', () => {
+        devLabel.style.color = '#232121';
+
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="{% static 'images/letter-v.png' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Project</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="dev">
+            <a href="https://vikasbhadu.herokuapp.com/"><img src="{% static 'images/1.png' %}" alt=""></a>
+            <a href="https://vikasbhadu.herokuapp.com/" style="text-decoration:none;color: #232121;"><label for="">VIKAS
+                    BHADU</label></a>
+        </div>
+        <div class="options">
+            <a href="https://vikasbhadu.herokuapp.com/">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="https://vikasbhadu.herokuapp.com/projects/">PROJECTS</a>
+            <a href="https://vikasbhadu.herokuapp.com/contact/">CONTACT</a>
+        </div>
+    </div>
+
+    <div class="window project-window">
+
+        <div class="profile">
+            <div class="name">PROJECT NAME</div>
+            <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo
+                quae quod deserunt eius sapiente solutions for complex problems</div>
+            <div class="projects"><a href="https://vikasbhadu.herokuapp.com/projects/"><button class="button">LIVE
+                        LINK</button></a></div>
+        </div>
+    </div>
+
+    <div class="middle projects-main project-middle">
+        <div class="projectno"><img src="{% static 'images/laptop.jpg' %}" class="laptop" alt=""></div>
+        <div class="info">
+            <div class="name heading">Project Overview </div>
+            <div class="text description">
+                <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects
+                    for
+                    agencies, consulted for startups, and collaborated with talented people to create digital products
+                    for
+                    both business and consumer use.</p>
+            </div>
+
+
+        </div>
+        <div class="info">
+            <div class="name heading">Tools Used</div>
+            <div class="skills">
+                <div class="name box">Django</div>
+                <div class="name box">Python</div>
+                <div class="name box">JavaScript</div>
+                <div class="name box">Java</div>
+                <div class="name box">C</div>
+                <div class="name box">C++</div>
+                <div class="name box">HTML</div>
+                <div class="name box">CSS</div>
+                <div class="name box">Pandas</div>
+                <div class="name box">Matplotlib</div>
+                <div class="name box">Numpy</div>
+                <div class="name box">Youtube API</div>
+                <div class="name box">DSA</div>
+                <div class="name box">STL</div>
+                <div class="name box">Git</div>
+            </div>
+
+        </div>
+        <div class="info see-live">
+            <div class="name heading">See Live </div>
+            <div class="project-live-button">
+                <button class="button btn-small">LIVE LINK</button>
+                <a href="https://vikasbhadu.herokuapp.com/projects/"><button class="button btn-small go-back">GO BACK</button></a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="bottom">
+        <div class="bottom-upper">
+
+            <div class="name heading bottom-name">Social</div>
+            <div class="social-media bottom-social">
+                <div><a target="_blank" href="https://www.linkedin.com/feed/"><img src="{% static 'images/linkedin (1).png' %}" alt=""></a></div>
+                <div><a target="_blank" href="https://github.com/Vikas-Bahdu"><img src="{% static 'images/github.png' %}" alt=""></a></div>
+                <div><img src="{% static 'images/twitter.png' %}" alt=""></div>
+                <div><img src="{% static 'images/youtube (1).png' %}" alt=""></div>
+                <div ><img src="{% static 'images/instagram.png' %}" alt=""></div>
+            </div>
+        </div>
+
+        <div class="bottom-lower"></div>
+        <div class="text description copyright">© Copyright 2022. Made by <a href="https://vikasbhadu.herokuapp.com/"
+                style="color:whitesmoke">Vikas Bhadu</a> </div>
+    </div>
+
+
+    <script>
+        console.log("hello! world");
+        let Parent_devLabel = document.getElementsByClassName('dev');
+        let devImage = Parent_devLabel[0].querySelectorAll('a')[0].querySelector('img');
+        let devLabel = Parent_devLabel[0].querySelectorAll('a')[1];
+
+
+        devImage.addEventListener('mouseover', () => {
+            devLabel.style.color = '#facf0f';
+
+        })
+
+        devImage.addEventListener('mouseout', () => {
+            devLabel.style.color = '#232121';
+
+        })
+
+    </script>
+</body>
+
+</html>
