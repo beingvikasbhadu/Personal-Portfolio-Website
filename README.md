@@ -13,7 +13,7 @@ This was a website built to showcase my technical skills, web design skills.
 * HTML5
 * CSS3
 * JavaScript 
-* Djnago
+* Djnago (Pyhton)
 
 # :mag_right:Check it at
 * https://vikasbhadu.herokuapp.com/
